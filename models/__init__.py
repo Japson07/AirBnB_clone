@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 from models.base_model import BadeModel, Base
 from models.user import User
 from model.state import State
