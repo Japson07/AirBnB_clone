@@ -12,6 +12,7 @@ from models.place import Place
 from models.review import Review
 from shlex import split
 
+
 class HBNBCommand(cmd.Cmd):
     """this connotes the entry point of the command line interpreter
     """
@@ -44,13 +45,13 @@ class HBNBCommand(cmd.Cmd):
             obj = eval("{}()".format(my_list[0]))
 
             for arg in range(1, len(my_list)):
-                param_list = my_list[arg.split("=")
+                param_list = my_list[arg.split("=")]
                 value = param_list[1]
                 if value[0] == "\"":
                     value = value[1:-1]
                     value = value.replace("_", " ")
                     for char in range(len(value)):
-                        if value[char[ == "\"":
+                        if value[char] == "\"":
                             value = value[:char - 1] + "\\" + value[char - 1:]
                 elif "." in value:
                     value = float(value)
@@ -61,10 +62,10 @@ class HBNBCommand(cmd.Cmd):
             print("{}".format(obj.id))
         except SyntaxError:
             print("** class name missing **")
-        except NameError
+        except NameError:
             print("** class does not exist **")
 
-    def do_show(self,line):
+    def do_show(self, line):
         """prints the string representation of an instance
         Exceptions:
             SyntaxError: when no argument is given
