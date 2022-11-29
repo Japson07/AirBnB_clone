@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """the file storage for the project"""
 import json
-from models.base_model import BaseModel
+from models.base_models import BaseModel
 from model.user import User
 from models.state import State
 from models.city import City

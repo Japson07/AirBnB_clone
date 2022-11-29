@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """This is the database storage for AirBnB"""
-from models.base_model import Base, BaseModel
+from models.base_models import Base, BaseModel
 from models.user import User
 from models.state import State
 from models.city import City

@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """This is the amenity class"""
-from models.base_model import BaseModel, Base
+from models.base_models import BaseModel, Base
 from sqlalchemy import Column, String, ForeignKey
 from sqlalchemy.ext.declarative import declarative_base
 from os import getenv

@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """This is the city class"""
-from models.base_model import BaseModel, Base
+from models.base_models import BaseModel, Base
 from sqlalchemy import Column, String, ForeignKey
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship

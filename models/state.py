@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """This is the state class"""
 import models
-from models.base_model import BaseModel, Base
+from models.base_models import BaseModel, Base
 from models.city import City
 from sqlalchemy import Column, String, ForeignKey
 from sqlalchemy.ext.declarative import declarative_base
