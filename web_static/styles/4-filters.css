@@ -1,0 +1,28 @@
+.filters {
+	background-color: #FFFFFF;
+	height: 70px;
+	width: 100%;
+	border: 1px solid;
+	border-color: #DDDDDD;
+	border-radius: 4px;
+	display: flex;
+	flex-flow: row;
+	justify-content: right;
+	align-items: center;
+}
+
+button {
+	font-size: 18px;
+	background-color: #FF5A5F;
+	color: #FFFFFF;
+	height: 48px;
+	width: 20%;
+	border: 0px;
+	border-radius: 4px;
+	text-align: center;
+	margin-right: 30px; /* Space to the right of button */
+}
+
+button:hover {
+	opacity: 90%;
+}
